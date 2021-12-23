@@ -1,0 +1,13 @@
+/* avatar image */ 
+#avatar {
+    width: 60px;
+    height: 60px;
+  }
+/*remove underline link*/
+#homelink {
+    text-decoration: none;
+    color: black;
+}
+nav ul li a {
+    text-decoration: none;
+}
