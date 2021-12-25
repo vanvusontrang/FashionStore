@@ -1,2 +1,2 @@
 Bootstraps 4
-Jquery 3.6.0
+Jquery 3.5.1
