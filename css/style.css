@@ -12,8 +12,28 @@ body {
     color: black;
 }
 
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 nav ul li a {
     text-decoration: none;
+    color: white;
+}
+
+.active {
+    background-color:rgb(10, 127, 236);
 }
 
 #col-1-5 {
@@ -39,6 +59,14 @@ nav ul li a {
 #left-navbar {
     position: fixed;
     width: 12%;
-    top: 134px;
+    top: 120px;
     z-index: 98;
+}
+button {
+    width: 120px;
+    height: 40px;
+}
+#btn-group {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

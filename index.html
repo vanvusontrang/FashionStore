@@ -30,23 +30,23 @@
         </ul>
     </nav>
     <!--Tools Navbar-->
-    <nav id="tool-navbar" class="navbar navbar-expand-sm bg-info navbar-dark">
+    <nav id="tool-navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="navbar-brand" href="index.html">
-                    <i class="fas fa-home py-0"></i>
+                    <i class="fas fa-home fa-lg"></i>
                 </a>
             </li>
         </ul>
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link active py-0"><b>CLOTHES</b></a>
+            <li id="clothes" class="nav-item ">
+                <a href="#" class="nav-link"><b>CLOTHES</b></a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link active py-0"><b>DRESS</b></a>
+            <li id="dress" class="nav-item">
+                <a href="#" class="nav-link"><b>DRESS</b></a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link active py-0"><b>SHOES</b></a>
+            <li id="shoes" class="nav-item">
+                <a href="#" class="nav-link"><b>SHOES</b></a>
             </li>
         </ul>
     </nav>
@@ -54,21 +54,20 @@
     <div id="main-container" class="row">
         <div id="col-1-5" class="col-1">
             <!--Left navbar-->
-            <nav id="left-navbar" class="navbar bg-secondary navbar-dark">
+            <nav id="left-navbar" class="navbar bg-light navbar-light">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <span class="navbar-text">
-                            Navbar Text
+                        <span id="navbar-text" class="navbar-text">
                         </span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Option1</a>
+                        <a class="nav-link" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Option2</a>
+                        <a class="nav-link" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Option3</a>
+                        <a class="nav-link" href="#"></a>
                     </li>
                 </ul>
             </nav>
@@ -77,19 +76,66 @@
         <div class="col">
             <!--Form-->
             <form action="">
+                <h1>Clothes</h1>
                 <div class="form-row">
                     <div class="col">
                         <label for="username">Username:  </label>
                         <input type="text" class="form-control" placeholder="Enter username">
-                    </div>
-                    <div class="col">
                         <label for="email">Email: </label>
-                        <input type="email" class="form-control float-left" placeholder="Enter email">
+                        <input type="email" class="form-control" placeholder="Enter email">
                     </div>
                     <div class="col">
-                        <label for="password">Username: </label>
+                        <label for="password">Password: </label>
                         <input type="password" class="form-control" placeholder="Enter password">
                     </div>
+                </div>
+                <div id="btn-group" class="">
+                    <button type="button" class="btn btn-primary">List</button>
+                    <button type="button" class="btn btn-primary">Create</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-primary">Delete</button>
+                </div>
+            </form>
+            <form action="">
+                <h1>Dress</h1>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="username">Username:  </label>
+                        <input type="text" class="form-control" placeholder="Enter username">
+                        <label for="email">Email: </label>
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="col">
+                        <label for="password">Password: </label>
+                        <input type="password" class="form-control" placeholder="Enter password">
+                    </div>
+                </div>
+                <div id="btn-group" class="">
+                    <button type="button" class="btn btn-primary">List</button>
+                    <button type="button" class="btn btn-primary">Create</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-primary">Delete</button>
+                </div>
+            </form>
+            <form action="">
+                <h1>Shoes</h1>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="username">Username:  </label>
+                        <input type="text" class="form-control" placeholder="Enter username">
+                        <label for="email">Email: </label>
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="col">
+                        <label for="password">Password: </label>
+                        <input type="password" class="form-control" placeholder="Enter password">
+                    </div>
+                </div>
+                <div id="btn-group" class="">
+                    <button type="button" class="btn btn-primary">List</button>
+                    <button type="button" class="btn btn-primary">Create</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-primary">Delete</button>
                 </div>
             </form>
             <h1>Clothes</h1>
