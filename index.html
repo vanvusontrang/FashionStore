@@ -16,7 +16,6 @@
 <!--Main-->
 <body>
     <!--Header Navbar-->
-    <!---->
     <nav class="main-header navbar navbar-expand navbar-light">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -40,13 +39,16 @@
         </ul>
         <ul class="navbar-nav">
             <li id="clothes" class="nav-item ">
-                <a href="#" class="nav-link"><b>CLOTHES</b></a>
+                <a href="#" class="nav-link active"><b>CLOTHES</b></a>
             </li>
             <li id="dress" class="nav-item">
-                <a href="#" class="nav-link"><b>DRESS</b></a>
+                <a href="#" class="nav-link active"><b>DRESS</b></a>
             </li>
             <li id="shoes" class="nav-item">
-                <a href="#" class="nav-link"><b>SHOES</b></a>
+                <a href="#" class="nav-link active"><b>SHOES</b></a>
+            </li>
+            <li id="accessories" class="nav-item">
+                <a id="accessories" class="nav-link active" href="#"><b>ACCESSORIES</b></a>
             </li>
         </ul>
     </nav>
@@ -61,13 +63,16 @@
                         </span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                        <a id="clothes-list-1" class="nav-link active" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                        <a id="clothes-list-2" class="nav-link active" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                        <a id="clothes-list-3" class="nav-link active" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="clothes-list-4" class="nav-link active" href="#"></a>
                     </li>
                 </ul>
             </nav>
@@ -75,7 +80,7 @@
         <!--Data table-->
         <div class="col">
             <!--Form-->
-            <form action="">
+            <form id="clothes-form" action="">
                 <h1>Clothes</h1>
                 <div class="form-row">
                     <div class="col">
@@ -96,7 +101,7 @@
                     <button type="button" class="btn btn-primary">Delete</button>
                 </div>
             </form>
-            <form action="">
+            <form id="dress-form" action="">
                 <h1>Dress</h1>
                 <div class="form-row">
                     <div class="col">
@@ -117,7 +122,7 @@
                     <button type="button" class="btn btn-primary">Delete</button>
                 </div>
             </form>
-            <form action="">
+            <form id="shoes-form" action="">
                 <h1>Shoes</h1>
                 <div class="form-row">
                     <div class="col">
@@ -138,8 +143,7 @@
                     <button type="button" class="btn btn-primary">Delete</button>
                 </div>
             </form>
-            <h1>Clothes</h1>
-            <table class="table table-bordered table-hover">
+            <table id="clothes-table" class="table table-bordered table-hover">
                 <thead>
                     <tr>
                         <th>Option1</th>
@@ -165,8 +169,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h1>Dress</h1>
-            <table class="table table-bordered table-hover">
+            <table id="dress-table" class="table table-bordered table-hover">
                 <thead>
                     <tr>
                         <th>Option1</th>
@@ -192,8 +195,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h1>Shoes</h1>
-            <table class="table table-bordered table-hover">
+            <table id="shoes-table" class="table table-bordered table-hover">
                 <thead>
                     <tr>
                         <th>Option1</th>

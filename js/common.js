@@ -13,23 +13,51 @@ $(document).ready(function(){
     }
     // tools navbar click event
     $("#clothes").click(function() {
-        $("#clothes").addClass("active");
-        $("#dress").removeClass("active");
-        $("#shoes").removeClass("active");
+        $("#clothes").addClass("clicked");
+        $("#dress").removeClass("clicked");
+        $("#shoes").removeClass("clicked");
+
+        $("#clothes-form").css("display", "block");
+        $("#clothes-table").css("display", "block");
+        $("#dress-form").css("display", "none");
+        $("#dress-table").css("display", "none");
+        $("#shoes-form").css("display", "none");
+        $("#shoes-table").css("display", "none");
 
         $("#navbar-text").text("CLOTHES");
+
+        $("#clothes-list-1").text("Machtwear");
+        $("#clothes-list-2").text("Praticewear");
+        $("#clothes-list-3").text("Home");
+        $("#clothes-list-4").text("Visited");
+
     });
     $("#dress").click(function() {
-        $("#dress").addClass("active");
-        $("#clothes").removeClass("active");
-        $("#shoes").removeClass("active");
+        $("#dress").addClass("clicked");
+        $("#clothes").removeClass("clicked");
+        $("#shoes").removeClass("clicked");
+
+        $("#dress-form").css("display", "block");
+        $("#dress-table").css("display", "block");
+        $("#clothes-form").css("display", "none");
+        $("#clothes-table").css("display", "none");
+        $("#shoes-form").css("display", "none");
+        $("#shoes-table").css("display", "none");
 
         $("#navbar-text").text("DRESS");
     });
     $("#shoes").click(function() {
-        $("#shoes").addClass("active");
-        $("#clothes").removeClass("active");
-        $("#dress").removeClass("active");
+        $("#shoes").addClass("clicked");
+        $("#clothes").removeClass("clicked");
+        $("#dress").removeClass("clicked");
+        $("#navbar-text").text("SHOES");
+
+        $("#shoes-form").css("display", "block");
+        $("#shoes-table").css("display", "block");
+        $("#dress-form").css("display", "none");
+        $("#dress-table").css("display", "none");
+        $("#clothes-form").css("display", "none");
+        $("#clothes-table").css("display", "none");
 
         $("#navbar-text").text("SHOES");
     });
