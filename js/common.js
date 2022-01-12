@@ -16,13 +16,16 @@ $(document).ready(function(){
         $("#clothes").addClass("clicked");
         $("#dress").removeClass("clicked");
         $("#shoes").removeClass("clicked");
+        $("#accessories").removeClass("clicked");
 
-        $("#clothes-form").css("display", "block");
-        $("#clothes-table").css("display", "block");
-        $("#dress-form").css("display", "none");
-        $("#dress-table").css("display", "none");
-        $("#shoes-form").css("display", "none");
-        $("#shoes-table").css("display", "none");
+        $("#clothes-form").removeClass("d-none");
+        $("#clothes-table").removeClass("d-none");
+        $("#dress-form").addClass("d-none");
+        $("#dress-table").addClass("d-none");
+        $("#shoes-form").addClass("d-none");
+        $("#shoes-table").addClass("d-none");
+        $("#accessories-form").addClass("d-none");
+        $("#accessories-table").addClass("d-none");
 
         $("#navbar-text").text("CLOTHES");
 
@@ -36,13 +39,16 @@ $(document).ready(function(){
         $("#dress").addClass("clicked");
         $("#clothes").removeClass("clicked");
         $("#shoes").removeClass("clicked");
+        $("#accessories").removeClass("clicked");
 
-        $("#dress-form").css("display", "block");
-        $("#dress-table").css("display", "block");
-        $("#clothes-form").css("display", "none");
-        $("#clothes-table").css("display", "none");
-        $("#shoes-form").css("display", "none");
-        $("#shoes-table").css("display", "none");
+        $("#dress-form").removeClass("d-none");
+        $("#dress-table").removeClass("d-none");
+        $("#clothes-form").addClass("d-none");
+        $("#clothes-table").addClass("d-none");
+        $("#shoes-form").addClass("d-none");
+        $("#shoes-table").addClass("d-none");
+        $("#accessories-form").addClass("d-none");
+        $("#accessories-table").addClass("d-none");
 
         $("#navbar-text").text("DRESS");
     });
@@ -50,15 +56,42 @@ $(document).ready(function(){
         $("#shoes").addClass("clicked");
         $("#clothes").removeClass("clicked");
         $("#dress").removeClass("clicked");
-        $("#navbar-text").text("SHOES");
-
-        $("#shoes-form").css("display", "block");
-        $("#shoes-table").css("display", "block");
-        $("#dress-form").css("display", "none");
-        $("#dress-table").css("display", "none");
-        $("#clothes-form").css("display", "none");
-        $("#clothes-table").css("display", "none");
+        $("#accessories").removeClass("clicked");
 
         $("#navbar-text").text("SHOES");
+
+        $("#shoes-form").removeClass("d-none");
+        $("#shoes-table").removeClass("d-none");
+        $("#clothes-form").addClass("d-none");
+        $("#clothes-table").addClass("d-none");
+        $("#dress-form").addClass("d-none");
+        $("#dress-table").addClass("d-none");
+        $("#accessories-form").addClass("d-none");
+        $("#accessories-table").addClass("d-none");
+
+        $("#navbar-text").text("SHOES");
+    });
+    $("#accessories").click(function() {
+        $("#accessories").addClass("clicked");
+        $("#dress").removeClass("clicked");
+        $("#clothes").removeClass("clicked");
+        $("#shoes").removeClass("clicked");
+
+        $("#accessories-form").removeClass("d-none");
+        $("#accessories-table").removeClass("d-none");
+        $("#clothes-form").addClass("d-none");
+        $("#clothes-table").addClass("d-none");
+        $("#dress-form").addClass("d-none");
+        $("#dress-table").addClass("d-none");
+        $("#shoes-form").addClass("d-none");
+        $("#shoes-table").addClass("d-none");
+
+        $("#navbar-text").text("CLOTHES");
+
+        $("#clothes-list-1").text("Machtwear");
+        $("#clothes-list-2").text("Praticewear");
+        $("#clothes-list-3").text("Home");
+        $("#clothes-list-4").text("Visited");
+
     });
 });

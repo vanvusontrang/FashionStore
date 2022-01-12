@@ -48,7 +48,7 @@
                 <a href="#" class="nav-link active"><b>SHOES</b></a>
             </li>
             <li id="accessories" class="nav-item">
-                <a id="accessories" class="nav-link active" href="#"><b>ACCESSORIES</b></a>
+                <a class="nav-link active" href="#"><b>ACCESSORIES</b></a>
             </li>
         </ul>
     </nav>
@@ -77,31 +77,58 @@
                 </ul>
             </nav>
         </div>
-        <!--Data table-->
         <div class="col">
             <!--Form-->
-            <form id="clothes-form" action="">
+            <form id="clothes-form" class="d-none" action="">
                 <h1>Clothes</h1>
                 <div class="form-row">
-                    <div class="col">
-                        <label for="username">Username:  </label>
-                        <input type="text" class="form-control" placeholder="Enter username">
-                        <label for="email">Email: </label>
-                        <input type="email" class="form-control" placeholder="Enter email">
+                    <div class="form-group col-md-6">
+                        <label for="id">MãMH:</label>
+                        <input type="text" class="form-control" placeholder="Mã mặt hàng">
                     </div>
-                    <div class="col">
-                        <label for="password">Password: </label>
-                        <input type="password" class="form-control" placeholder="Enter password">
+                    <div class="form-group col-md-6">
+                        <label for="name">TênMH:</label>
+                        <input type="text" class="form-control" placeholder="Tên mặt hàng">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="price">Giá bán:</label>
+                        <input type="text" class="form-control" placeholder="Giá">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="quantity">Số lượng:</label>
+                        <input type="text" class="form-control" placeholder="Số bộ">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="description">Mô tả:</label>
+                        <textarea class="form-control" name="" id="description" rows="5"></textarea>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="type">Loại mặt hàng:</label>
+                        <select class="form-control" name="" id="type">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="quantity">Thương hiệu:</label>
+                        <select class="form-control" name="" id="type">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
                     </div>
                 </div>
                 <div id="btn-group" class="">
-                    <button type="button" class="btn btn-primary">List</button>
+                    <button type="button" class="btn btn-primary">Search</button>
                     <button type="button" class="btn btn-primary">Create</button>
                     <button type="button" class="btn btn-primary">Update</button>
                     <button type="button" class="btn btn-primary">Delete</button>
                 </div>
             </form>
-            <form id="dress-form" action="">
+            <form id="dress-form" class="d-none" action="">
                 <h1>Dress</h1>
                 <div class="form-row">
                     <div class="col">
@@ -122,7 +149,7 @@
                     <button type="button" class="btn btn-primary">Delete</button>
                 </div>
             </form>
-            <form id="shoes-form" action="">
+            <form id="shoes-form" class="d-none" action="">
                 <h1>Shoes</h1>
                 <div class="form-row">
                     <div class="col">
@@ -143,7 +170,62 @@
                     <button type="button" class="btn btn-primary">Delete</button>
                 </div>
             </form>
-            <table id="clothes-table" class="table table-bordered table-hover">
+            <form id="accessories-form" class="d-none" action="">
+                <h1>Accessorises</h1>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="name">Accessories Name</label>
+                        <input type="text" class="form-control" placeholder="Enter accessories name">
+                        <label for="Type">Type</label>
+                        <input type="text" class="form-control" placeholder="Enter accessories type">
+                    </div>
+                    <div class="col">
+                        <label for="Quantity">Quantity</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+            </form>
+            <!--Data table-->
+            <table id="clothes-table" class="table table-bordered table-hover d-none">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã MH</th>
+                        <th>Tên MH</th>
+                        <th>Giá bán</th>
+                        <th>Số lượng</th>
+                        <th>Loại mặt hàng</th>
+                        <th>Thương hiệu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Danger</td>
+                        <td>Moe</td>
+                        <td>moe@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Danger</td>
+                        <td>Moe</td>
+                        <td>moe@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Danger</td>
+                        <td>Moe</td>
+                        <td>moe@gmail.com</td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                </tr>
+            </table>
+            <table id="dress-table" class="table table-bordered table-hover d-none">
                 <thead>
                     <tr>
                         <th>Option1</th>
@@ -169,7 +251,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table id="dress-table" class="table table-bordered table-hover">
+            <table id="shoes-table" class="table table-bordered table-hover d-none">
                 <thead>
                     <tr>
                         <th>Option1</th>
@@ -195,7 +277,7 @@
                     </tr>
                 </tbody>
             </table>
-            <table id="shoes-table" class="table table-bordered table-hover">
+            <table id="accessories-table" class="table table-bordered table-hover d-none">
                 <thead>
                     <tr>
                         <th>Option1</th>
