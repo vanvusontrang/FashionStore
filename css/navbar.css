@@ -4,7 +4,7 @@ body {
 
 #avatar {
     width: 40px;
-    height: 40px;
+    height: 30px;
 }
 
 #homelink {
@@ -76,3 +76,7 @@ button {
     color: black !important;
 }
 
+#login-form {
+    width: 25%;
+    height: 25%;
+}
